@@ -13,36 +13,57 @@
     let resultado = numero == 1 ?  "Soy un uno " : "No soy un uno ";
 
 
-    //-----------Reto piedra papel o tijeras-------------//
+    //-----------Reto piedra papel o tijeras con if/else-------------//
 
     let jugador1;
     let jugador2;
 
-               
+    function piedraPapelTijeras (jugador1, jugador2){            
 
-        if (jugador1 = "Piedra" && jugador2 == "Tijeras") {
+        if (jugador1 = "piedra" && jugador2 == "tijeras") {
 
-            console.log("Piedra vence tijeras: El jugador 1 gana");         
+            console.log("piedra vence tijeras: Jugador 1 gana");         
+        }
+
+        else if (jugador1 = "piedra" && jugador2 == "papel") {
+
+            console.log("papel vence piedra: Jugador 2 gana");         
+        }
+        
+        else if (jugador1 = "papel" && jugador2 == "piedra") {
+
+            console.log("papel vence piedra: Jugador 1 gana");         
         } 
 
-        else if (jugador1 = "Piedra" && jugador2 == "Papel") {
-                        
-            console.log("Papel vence tijeras: El jugador 2 gana");         
-        }
+        else if (jugador1 = "papel" && jugador2 == "tijeras") {
 
-        else if (jugador1 = "Piedra" && jugador2 == "Piedra") {
-                        
-            console.log("Es un empate");         
+            console.log("tijeras vencen papel: Jugador 2 gana");         
         }
-        else if (jugador1 = "Piedra" && jugador2 == "Papel") {
-                        
-            console.log("Papel vence tijeras: El jugador 2 gana");         
-        }
+        
+        else if (jugador1 = "tijeras" && jugador2 == "papel") {
 
-        else if (jugador1 = "Piedra" && jugador2 == "Piedra") {
-                        
-            console.log("Es un empate");         
+            console.log(" tijeras vencen papel: Jugador 1 gana");         
         } 
 
+        else if (jugador1 = "tijeras" && jugador2 == "piedra") {
+
+            console.log("piedra vencen tijeras: Jugador 2 gana");         
+        }
+        
+        else if (jugador1 = "papel" && jugador2 == "papel") {
+
+            console.log("Es un empate de papel");         
+        }         
+
+        else if (jugador1 = "tijeras" && jugador2 == "tijeras") {
+
+            console.log("Es un empate de tijeras");         
+        }  
+        
+        else if (jugador1 = "piedra" && jugador2 == "piedra") {
+
+            console.log("Es un empate de piedras");         
+        }         
+    }
     
 
